@@ -13,9 +13,11 @@ app.use(cors());
 app.use("/goats", goatRoutes);
 
 app.get("/", (req, res) => {
-  res.send("howdy parnter");
+  res.send("Hello there!");
 });
+
 app.post("/", (req, res) => {
-  res.status(405).send("not allowed");
+  res.status(405).send("Not allowed!");
 });
+
 module.exports = app;
